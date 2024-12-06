@@ -1,73 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>Kaleb Raincastle</title>
 </head>
+
 <body>
-    <header>
-        <img src="images/QuillPaper.png" alt="Logo" class="logo">
-        <h1>Kaleb Castle</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="intro">
-            <img src="images/KalebSquare.JPG" alt="Introduction Image" class="rounded-image">
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>This is where you'll introduce yourself.</p>
-        </section>
-		<h2>Blog Posts</h2>
-        <section id="blog">
-            <div class="blog-post">
-                <a href="post1.html">
-                    <img src="images/Sketchesoflogo.png" alt="Post 1">
-                    <h3>Blog Post Title 1</h3>
-                </a>
-            </div>
-            <div class="blog-post">
-                <a href="post2.html">
-                    <img src="images/Sketchesoflogo.png" alt="Post 2">
-                    <h3>Blog Post Title 2</h3>
-                </a>
-            </div>
-            <div class="blog-post">
-                <a href="post3.html">
-                    <img src="images/Sketchesoflogo.png" alt="Post 3">
-                    <h3>Blog Post Title 3</h3>
-                </a>
-            </div>
-        </section>
-        <section id="gallery">
-            <h2>Photo Gallery</h2>
-            <div class="gallery-container">
-                <figure>
-                    <img src="images/Asset 12.png" alt="Image 1">
-                    <figcaption>Caption for Image 1</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/Asset 12.png" alt="Image 2">
-                    <figcaption>Caption for Image 2</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/Asset 12.png" alt="Image 3">
-                    <figcaption>Caption for Image 3</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Blog Portfolio</p>
-    </footer>
+    <div>
+        <header>
+            <a href="index.html" class="site-logo">
+                <img class="logo" src="images/Raincastle2.png" alt="logo">
+            </a>
+            <button class="menu-toggle">☰</button>
+            <nav class="site-nav">
+                <ul class="nav-links">
+                    <li class="li"><a href="About.html">About</a></li>
+                    <li class="li"><a href="Gallery.html">Gallery</a></li>
+                    <li class="li"><a href="Blog.html">Blog</a></li>
+                    <li class="li"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="container">
+            <section class="profile">
+                <img class="profile-pic" src="images/KalebSquare.JPG" alt="Profile Picture">
+                <h1>Kaleb C.</h1>
+                <p>Welcome to my website. I have lots of things I want to share. There isn’t much right now, but there will be more soon. Slowly but surely.</p>
+                <a href="AboutMe.html"><p class="aboutbutton">About Me</p></a>
+            </section>
+            <section class="blog">
+				<a href="Blog.html"><h2>From the blog</h2></a>
+                <div class="blog-posts">
+                    <div class="blog-post">
+                        <img src="images/Placeholder.png" alt="Blog Image">
+                        <h3>Working Title</h3>
+                        <p>December 31, 1999</p>
+                    </div>
+                    <div class="blog-post">
+                        <img src="images/Placeholder.png" alt="Blog Image">
+                        <h3>Working Title</h3>
+                        <p>December 31, 1999</p>
+                    </div>
+                    <div class="blog-post">
+                        <img src="images/Placeholder.png" alt="Blog Image">
+                        <h3>Working Title</h3>
+                        <p>December 31, 1999</p>
+                    </div>
+                </div>
+            </section>
+													<div class="emptyblock"></div>
+			<section class="blog">
+				<a href="Gallery.html"><h2>From the gallery</h2></a>
+				<div class="blog-posts">
+					<div class="blog-post">
+                        <img src="images/SwirlBirdDissonance.png" alt="Blog Image">
+                        <p>December 31, 1999</p>
+                    </div>
+                    <div class="blog-post">
+                        <img src="images/SwirlBirdDissonance.png" alt="Blog Image">
+                        <p>December 31, 1999</p>
+                    </div>
+                    <div class="blog-post">
+                        <img src="images/SwirlBirdDissonance.png" alt="Blog Image">
+                        <p>December 31, 1999</p>
+                    </div>
+				</div>
+			</section>
+        </main>
+													<div class="emptyblock"></div>
+        <footer>
+			<p>Follow me<br>(instagram)</p>
+        </footer>
+    </div>
+    <script src="main.js"></script> <!-- Ensure this line is included for JavaScript functionality -->
 </body>
 </html>
