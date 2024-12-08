@@ -102,7 +102,7 @@ li a:active {
   	font-weight:500;
   	font-style: normal;
 }
-.aboutbutton {
+.profile-btn {
 	color: white;
 	font-size: 100%;
 	text-align: center;
@@ -116,10 +116,10 @@ li a:active {
 	width: 120px;
 	margin: 25px auto 40px;
 	}
-.aboutbutton:hover {
+.profile-btn:hover {
 	background-color: #DDA227;
 		}
-.aboutbutton:active {
+.profile-btn:active {
 	background-color: #AF802C;
 }
 .profile a {
@@ -133,11 +133,13 @@ li a:active {
 .blog-posts {
     display: flex;
     justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 .blog-post {
     margin: 20px 0px;
     flex: 1;
-    max-width: 30%;
+    max-width: 100%;
 }
 .blog-post img {
     max-width: 100%;
@@ -167,7 +169,6 @@ footer {
 }
 /* Extras */
 .emptyblock {
-		width:80%;
 		height:50px;
 }
 
@@ -176,10 +177,10 @@ footer {
 /* ==================================*/
 
 @media all and (max-width: 699px) {
-	.blog-post {
+	.homepost {
 		display: none;
 	}
-	.blog-post:first-of-type {
+	.homepost:first-of-type {
 		display: block;
 		max-width: 100%;
 	}
@@ -213,8 +214,145 @@ footer {
 @media all and (min-width: 700px) {
     .blog-posts {
         gap: 20px;
+		flex-direction: row;
     }
     .blog-post {
         max-width: 45%;
+		min-width: 30%
     }
+}
+
+/* ==================================*/
+/* ========= About me CSS ===========*/
+/* ==================================*/
+
+.aboutme {
+	max-width: 44rem;
+	margin: auto;
+	padding: 0rem 2rem;
+	line-height: 2;
+}
+.aboutme h2 {
+	font-size: 300%;
+	font-weight: normal;
+}
+.aboutme img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+    height: auto;
+	padding: 0px;
+}
+
+/* ==================================*/
+/* ========= Blog page CSS ==========*/
+/* ==================================*/
+
+.blogpage h2 {
+	font-size: 300%;
+	font-weight: normal;
+	text-align: center;
+	padding: 2rem;
+}
+@media all and (max-width: 69px) {
+	.blogposts {
+		flex-direction: column;
+	}
+	
+}
+
+/* ==================================*/
+/* ========== Gallery CSS ===========*/
+/* ==================================*/
+
+.gallerypage {
+	color: white;
+	background: #583E19 url("images/Asset 4.png") repeat left top;
+}
+.gallerypage header {
+	background-color: #AF802C;
+	border-bottom: 20px solid #F8ECB4;
+}
+.gallerypage a {
+	color: white;
+}
+.gallerypage a:active {
+	background-color: #8F6924;
+}
+.gallerypage footer {
+	background-color: #070707;
+	border-top: 20px solid black;
+}
+.gallery {
+	margin-top:2rem;
+	}
+.gallery > div {
+	columns:4;
+	gap:1.25rem;
+	padding-top:1.25rem;
+	}
+.gallery img {
+	background-color: white;
+	padding: 2px;
+	display:block;
+	width:100%;
+	margin-bottom:1.25rem;
+	}
+.gallery h2 {
+	font-size: 300%;
+	font-weight: normal;
+	text-align: center;
+	padding: 2rem;
+	}
+
+@media (max-width:60rem) {
+	.gallery > div {
+		columns: 3;
+	}
+}
+
+@media (max-width:48rem) {
+	.gallery > div {
+		columns: 2;
+	}
+}
+
+/* ==================================*/
+/* ========== Contact CSS ===========*/
+/* ==================================*/
+
+.contactpage {
+	background-color: #624E37;
+	color: white;
+}
+.contactpage header {
+	background-color: #987A50;
+	color: white;
+	border-bottom: 20px solid #C6B298;
+}
+.contactpage a {
+	color: white;
+}
+.contactpage a:hover {
+	background-color: #7A6240;
+}
+.contact h2 {
+	font-size: 200%;
+	font-weight: normal;
+	text-align: center;
+	padding: 2rem;
+}
+.contact div {
+	max-width: 44rem;
+	margin: auto;
+	padding: 0rem 2rem;
+	line-height: 2;
+	color: white;
+}
+.contactinfo {
+	text-align: center;
+}
+.contactpage footer {
+	background-color: #121212;
+	border-top: 20px solid #0D0D0D;
 }
