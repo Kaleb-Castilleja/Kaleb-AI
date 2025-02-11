@@ -69,7 +69,7 @@ li a:active {
 	cursor: pointer;
 }
 .open {
-	height: 33vh;
+	height: 15em;
 }
 .hidden {
 	display: none;
